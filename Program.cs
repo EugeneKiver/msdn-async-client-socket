@@ -1,8 +1,8 @@
-﻿using System;  
-using System.Net;  
-using System.Net.Sockets;  
-using System.Threading;  
-using System.Text;  
+﻿using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
+using System.Text;
   
 // State object for receiving data from remote device.  
 public class StateObject {  
@@ -33,12 +33,12 @@ public class AsynchronousClient {
   
     private static void StartClient() {  
         // Connect to a remote device.  
-        try {  
-            // Establish the remote endpoint for the socket.  
+        try {
+            // Establish the remote endpoint for the socket.
             // The name of the
-            // remote device is "host.contoso.com".  
-            //IPHostEntry ipHostInfo = Dns.GetHostEntry("host.contoso.com");  
-            //IPAddress ipAddress = ipHostInfo.AddressList[0]; 
+            // remote device is "host.contoso.com".
+            //IPHostEntry ipHostInfo = Dns.GetHostEntry("host.contoso.com");
+            //IPAddress ipAddress = ipHostInfo.AddressList[0];
             IPAddress ipAddress = IPAddress.Parse("10.0.77.34");
 
             //IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
@@ -46,7 +46,7 @@ public class AsynchronousClient {
 
             Console.WriteLine("socket:"+ ipAddress + ":"+port);
             IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);
-            //IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);  
+            //IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);
   
             // Create a TCP/IP socket.  
             Socket client = new Socket(ipAddress.AddressFamily,  
