@@ -39,9 +39,9 @@ public class AsynchronousClient {
             // remote device is "host.contoso.com".
             //IPHostEntry ipHostInfo = Dns.GetHostEntry("host.contoso.com");
             //IPAddress ipAddress = ipHostInfo.AddressList[0];
-            IPAddress ipAddress = IPAddress.Parse("10.0.77.34");
+            //IPAddress ipAddress = IPAddress.Parse("10.0.77.34");
 
-            //IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
+            IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
             //IPAddress ipAddress = IPAddress.Loopback;
 
             Console.WriteLine("socket:"+ ipAddress + ":"+port);
